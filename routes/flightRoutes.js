@@ -4,11 +4,11 @@ import { validateInput } from '../middleware/validateInput.js';
 
 const flightRoutes = express.Router();
 
-flightRoutes.get('/get', getFlights);
-flightRoutes.post('/create', validateInput, createFlight);
-flightRoutes.get('/get/:id', getFlight);
-flightRoutes.put('/update/:id', updateFlight);
-flightRoutes.delete('/delete/:id', deleteFlight);
+flightRoutes.get('/', getFlights);
+flightRoutes.post('/', validateInput, createFlight);
+flightRoutes.get('/:id', getFlight);
+flightRoutes.put('/:id', updateFlight);
+flightRoutes.delete('/:id', deleteFlight);
 /**
  * @swagger
  * /flights:

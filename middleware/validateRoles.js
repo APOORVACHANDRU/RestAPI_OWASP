@@ -1,4 +1,4 @@
-// Description: Middleware to validate user roles
+
 const validateRoles = (...allowedRoles) => {
     return (req, res, next) => {
         // Ensure user exists and has a role

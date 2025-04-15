@@ -4,11 +4,11 @@ import { validateInput } from '../middleware/validateInput.js';
 
 const userRoutes = express.Router();
 
-userRoutes.get('/getUsers', getUsers);
-userRoutes.post('/createUser', createUser);
-userRoutes.get('/getUser/:id', getUser);
-userRoutes.put('/updateUser/:id', updateUser);
-userRoutes.delete('/deleteUser/:id', deleteUser);
+userRoutes.get('/', getUsers);
+userRoutes.post('/', createUser);
+userRoutes.get('/:id', getUser);
+userRoutes.put('/:id', updateUser);
+userRoutes.delete('/:id', deleteUser);
 
 
 export default userRoutes;
